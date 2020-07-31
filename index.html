@@ -27,7 +27,16 @@
   <link href="css/new-age.min.css" rel="stylesheet">
 
   <!-- Mailchimp js -->
-  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/2a671ef789943dc38a0652ab6/48ad5e50d132675f971b053e9.js");</script>
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+<script>
+function showMailingPopUp() {
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"YOUR_UUID_GOES_HERE","lid":"YOUR_LID_GOES_HERE"}) })
+    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+};
+
+document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+</script>
 
 </head>
 
@@ -66,7 +75,7 @@
         <div class="col-lg-5 my-auto">
           <div class="header-content mx-auto">
             <h1 class="mb-5">Never miss when your sourdough is just ready!</h1>
-            <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Join the sourdough.party!</a>
+            <a href="#download" id="open-popup" class="btn btn-outline btn-xl js-scroll-trigger">Join the sourdough.party!</a>
           </div>
         </div>
         <div class="col-lg-7 my-auto">
