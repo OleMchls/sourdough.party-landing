@@ -25,9 +25,6 @@
 
   <!-- Custom styles for this template -->
   <link href="css/new-age.min.css" rel="stylesheet">
-
-  <!-- Mailchimp js -->
-  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/2a671ef789943dc38a0652ab6/48ad5e50d132675f971b053e9.js");</script>
 </head>
 
 <body id="page-top">
@@ -43,7 +40,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#download">COMING SOON</a>
+            <a class="nav-link js-scroll-trigger" data-toggle="modal" data-target="#collectmail">COMING SOON</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#download">Download</a>
@@ -65,7 +62,17 @@
         <div class="col-lg-5 my-auto">
           <div class="header-content mx-auto">
             <h1 class="mb-5">Never miss when your sourdough is just ready!</h1>
-            <a href="#download" id="open-popup" class="btn btn-outline btn-xl js-scroll-trigger">Join the sourdough.party!</a>
+            <a href="#download" id="open-popup" class="btn btn-outline btn-xl js-scroll-trigger" data-toggle="modal" data-target="#collectmail">Join the sourdough.party!</a>
+          </div>
+        </div>
+        <!-- <button type="button" class="btn btn-primary" >
+          Launch demo modal
+        </button> -->
+        <div id="collectmail" class="modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="min-width: 640px">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScQa-fuhzU_kmr6JuPCzaNOliuTT9ptcwaPRojjTfMkRwC9Fg/viewform?embedded=true" width="640" height="498" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
           </div>
         </div>
         <div class="col-lg-7 my-auto">
